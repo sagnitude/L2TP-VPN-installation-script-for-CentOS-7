@@ -33,6 +33,8 @@ printf "
 ####################################################
 "
 
+yum install net-tools
+
 #获取服务器IP
 serverip=$(ifconfig -a |grep -w "inet"| grep -v "127.0.0.1" |awk '{print $2;}')
 printf "\e[33m$serverip\e[0m is the server IP?"
