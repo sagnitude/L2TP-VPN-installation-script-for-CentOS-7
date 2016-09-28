@@ -140,6 +140,7 @@ mknod /dev/random c 1 9
 
 #安装依赖的组件
 yum -y update
+yum install epel-release
 yum install -y openswan ppp xl2tpd wget
 
 rm -f /etc/ipsec.conf
